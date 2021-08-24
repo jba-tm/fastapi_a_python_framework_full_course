@@ -6,9 +6,13 @@ authors = ["Batyr Jumageldiyew <jumageldiyewb@list.ru>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-fastapi = {extras = ["all"], version = "^0.68.0"}
 SQLAlchemy = "^1.4.22"
 alembic = "^1.6.5"
+redis = "^3.5.3"
+fastapi = "^0.68.0"
+uvicorn = {extras = ["standard"], version = "^0.15.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
